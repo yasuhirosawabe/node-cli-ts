@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "diagnostics": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2015"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

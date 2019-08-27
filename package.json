@@ -1,0 +1,28 @@
+{
+  "name": "node-cli-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/index.js",
+    "compile": "gulp compile",
+    "clean": "gulp clean",
+    "build": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "nexe": "^3.3.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "cac": "^6.5.2",
+    "source-map-support": "^0.5.13"
+  }
+}
