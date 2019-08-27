@@ -1,0 +1,27 @@
+{
+  "name": "newproject",
+  "discard": [
+    "README.md",
+    "template.json",
+    "bin",
+    "dist",
+    "node_modules",
+    ".gitignore",
+    "package-lock.json"
+  ],
+  "parse": [
+    "PROJECT-README",
+    "package.json",
+    "gulpfile.js",
+    "src/index.ts"
+  ],
+  "move": [
+    {
+      "project-gitignore": ".gitignore"
+    },
+    {
+      "PROJECT-README": "README.md"
+    }
+  ],
+  "complete": "cd {{ name }} && git init && npm install"
+}

@@ -1,7 +1,7 @@
 {
-  "name": "node-cli-ts",
+  "name": "{{ name }}",
   "version": "0.0.1",
-  "description": "",
+  "description": "node cli app.",
   "main": "index.js",
   "scripts": {
     "start": "node bin/index.js",

@@ -10,7 +10,7 @@ const tsProject = ts.createProject(
 const { compile } = require('nexe');
 
 const targetNodeVersion = '10.16.0';
-const appName = 'node-cli';
+const appName = '{{ name }}';
 
 function bundle(targetOs) {
     return gulp.series(() => {

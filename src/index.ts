@@ -26,6 +26,6 @@ cli.command('').action(() => {
 });
 
 cli.help();
-cli.name = 'node-cli';
+cli.name = '{{ name }}';
 cli.version('0.0.1');
 cli.parse();
