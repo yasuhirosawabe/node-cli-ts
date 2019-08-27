@@ -7,7 +7,8 @@
     "dist",
     "node_modules",
     ".gitignore",
-    "package-lock.json"
+    "package-lock.json",
+    "yarn.lock"
   ],
   "parse": [
     "PROJECT-README",
@@ -23,5 +24,6 @@
       "PROJECT-README": "README.md"
     }
   ],
-  "complete": "cd {{ name }} && git init && npm install"
+  "complete": "cd {{ name }} && git init && {{ packageManager }} install",
+  "packageManager": "npm"
 }
