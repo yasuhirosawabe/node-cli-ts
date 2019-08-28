@@ -9,8 +9,9 @@ const tsProject = ts.createProject(
 );
 const { compile } = require('nexe');
 
-const targetNodeVersion = '10.16.0';
 const appName = '{{ name }}';
+const targetOss = ['mac-x64', 'linux-x64', 'alpine-x64', 'windows-x64'];
+const targetNodeVersion = '10.16.0';
 
 function bundle(targetOs) {
     return gulp.series(() => {
@@ -41,4 +42,4 @@ gulp.task('clean', gulp.series(() => {
 }));
 
 gulp.task('default', gulp.series('clean', 'compile', gulp.parallel(
-    bundle('windows-x64'), bundle('mac-x64'), bundle('linux-x64'))));
+    targetOss.map(tos => bundle(tos)))));
